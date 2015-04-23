@@ -16,7 +16,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
 /// Provides a square view, which you can subclass and add additional views to.
 @objc public class PKHUDSquareBaseView: UIView {
 
-    public init() {
+    public override init() {
       super.init(frame: CGRect(origin: CGPointZero, size: CGSize(width: 156.0, height: 156.0)))
     }
 
@@ -32,7 +32,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
 /// Provides a wide base view, which you can subclass and add additional views to.
 @objc public class PKHUDWideBaseView: UIView {
 
-    public init() {
+    public override init() {
       super.init(frame: CGRect(origin: CGPointZero, size: CGSize(width: 265.0, height: 90.0)))
     }
 
@@ -142,7 +142,7 @@ private let defaultSquareFrame = CGRect(origin: CGPointZero, size: CGSize(width:
 //// Provides the system UIActivityIndicatorView as an alternative.
 @objc public final class PKHUDSystemActivityIndicatorView: UIView {
     
-    required public init() {
+    required public override init() {
         super.init(frame: CGRectMake(0.0, 0.0, 120.0, 120.0))
         self.commonInit()
     }
